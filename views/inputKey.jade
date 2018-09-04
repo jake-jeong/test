@@ -1,0 +1,22 @@
+doctypehtml
+html
+  head
+  meta(charset='utf-8')
+  title 양종만을 위한 한글화 키 생성 프로그램
+
+  body
+    legend
+      h1 지갑 주소 출력하기.
+    form(action='outputAddress' method='post')
+
+      h2 너의 프라이빗 키를 넣어라
+        br
+        textarea(name='privateKey' style="width:100%; height:150px; border:1; overflow:visible; text-overflow:ellipsis;")
+      h2
+        input(type='submit' style="width:100%; height:50px" value="조회하기")
+    form(action='outputAddressFromPub' method='post')
+      h2 퍼블릭 키를 넣을거면 여기다 넣어라.
+        br
+        textarea(name='publicKey' style="width:100%; height:150px; border:1; overflow:visible; text-overflow:ellipsis;")
+      h2
+        input(type='submit' style="width:100%; height:50px" value="조회하기")
